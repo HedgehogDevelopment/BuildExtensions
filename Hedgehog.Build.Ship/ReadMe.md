@@ -56,3 +56,7 @@ The following is an example configuration:
 			Source="master"
 			Targets="web"
 			Languages="en" />
+			
+## License ##
+
+Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)
