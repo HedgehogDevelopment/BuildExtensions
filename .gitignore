@@ -1,0 +1,12 @@
+Hedgehog.Build.Razl/bin
+Hedgehog.Build.Razl/obj
+Hedgehog.Build.Ship/bin
+Hedgehog.Build.Ship/obj
+*ncrunchsolution*
+*.suo
+Hedgehog.Tds.Build.Sim.Console/bin
+Hedgehog.Tds.Build.Sim.Console/obj
+Hedgehog.Tds.Build.Sim/obj
+Hedgehog.Tds.Build.Sim/bin
+*ncrunchproject*
+*crunchsolution*

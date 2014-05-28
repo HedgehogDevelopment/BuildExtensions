@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E45940F3-DFAE-45C5-AFDB-3B578D257B9B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hedgehog.Tds.Build.Sim.Console</RootNamespace>
+    <AssemblyName>Hedgehog.Tds.Build.Sim.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIM.Base">
+      <HintPath>..\Libs\Sim\SIM.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Kernel.Adapters">
+      <HintPath>..\Libs\Sim\SIM.Kernel.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Kernel.Instances">
+      <HintPath>..\Libs\Sim\SIM.Kernel.Instances.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Kernel.Pipelines">
+      <HintPath>..\Libs\Sim\SIM.Kernel.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Kernel.Products">
+      <HintPath>..\Libs\Sim\SIM.Kernel.Products.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Pipelines">
+      <HintPath>..\Libs\Sim\SIM.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="SIM.Tool.Base">
+      <HintPath>..\Libs\Sim\SIM.Tool.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseArgsProcessor.cs" />
+    <Compile Include="ConsoleController.cs" />
+    <Compile Include="DeleteArgs.cs" />
+    <Compile Include="DeleteProcess.cs" />
+    <Compile Include="InstallArgs.cs" />
+    <Compile Include="InstallProcess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ReadMe.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
