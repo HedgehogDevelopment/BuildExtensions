@@ -64,6 +64,12 @@ The repository contains the following tools:
 		</Target>
 	</Project>
 
+## Demo Site ##
+
+You can download the demo website that uses these tools from [BuildExtenstionDemo](https://github.com/HedgehogDevelopment/BuildExtensionsDemo).
+
 ## License ##
 
 Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)
+
+
