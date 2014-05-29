@@ -2,7 +2,7 @@
 
 ================================
 
-# Hedehog Development Build Extensions #
+# Hedgehog Development Build Extensions #
 
 This repository contains a set of projects that are designed to help you create automated deployments. These tools are designed to work with [Team Development for Sitecore](http://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx) and MS Build.
 
