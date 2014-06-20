@@ -1,19 +1,20 @@
 <img src="http://www.hhogdev.com/Images/newsletter/logo_hedgehog.jpg" alt="Hedgehog Development" width="203" height="65" border="0">
-	================================
 
-	# Hedehog Development Build Extensions #
+================================
 
-	This repository contains a set of projects that are designed to help you create automated deployments. These tools are designed to work with [Team Development for Sitecore](http://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx) and MS Build.
+# Hedgehog Development Build Extensions #
 
-	The repository contains the following tools:
+This repository contains a set of projects that are designed to help you create automated deployments. These tools are designed to work with [Team Development for Sitecore](http://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx) and MS Build.
 
-	* [Hedgehog.Build.Razl](/Todo) - MSBuild tasks used to call [Razl](http://www.razl.net) scripts from an MS Build process.
-	* [Hedgehog.Build.Ship](/Todo) - MSBuild tasks used to call [Sitecore Ship](https://github.com/kevinobee/Sitecore.Ship) to install Sitecore update packages and perform publishes.
-	* [Hedgehog.Tds.Build.Sim](/Todo) - MSBuild tasks used to call [Sitecore SIM](https://marketplace.sitecore.net/en/Modules/Sitecore_Instance_Manager.aspx) commands to install and delete Sitecore instances. It is used in conjunction with [Hedgehog.Tds.Build.Sim.Console](/Todo).
-	* [Hedgehog.Tds.Build.Sim.Console](/Todo) - Console application used to run [Sitecore SIM](https://marketplace.sitecore.net/en/Modules/Sitecore_Instance_Manager.aspx) processes.
+The repository contains the following tools:
+
+* [Hedgehog.Build.Razl](https://github.com/HedgehogDevelopment/BuildExtensions/tree/master/Hedgehog.Build.Razl) - MSBuild tasks used to call [Razl](http://www.razl.net) scripts from an MS Build process.
+* [Hedgehog.Build.Ship](https://github.com/HedgehogDevelopment/BuildExtensions/tree/master/Hedgehog.Build.Ship) - MSBuild tasks used to call [Sitecore Ship](https://github.com/kevinobee/Sitecore.Ship) to install Sitecore update packages and perform publishes.
+* [Hedgehog.Tds.Build.Sim](https://github.com/HedgehogDevelopment/BuildExtensions/tree/master/Hedgehog.Tds.Build.Sim) - MSBuild tasks used to call [Sitecore SIM](https://marketplace.sitecore.net/en/Modules/Sitecore_Instance_Manager.aspx) commands to install and delete Sitecore instances. It is used in conjunction with [Hedgehog.Tds.Build.Sim.Console](/Todo).
+* [Hedgehog.Tds.Build.Sim.Console](https://github.com/HedgehogDevelopment/BuildExtensions/tree/master/Hedgehog.Tds.Build.Sim.Console) - Console application used to run [Sitecore SIM](https://marketplace.sitecore.net/en/Modules/Sitecore_Instance_Manager.aspx) processes.
 
 
-	## Example Build File ##
+## Example Build File ##
 
 	<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<UsingTask AssemblyFile="$(MSBuildExtensionsPath)\HedgehogDevelopment\Sim\Hedgehog.Tds.Build.Sim.dll" TaskName="Hedgehog.Tds.Build.Sim.SimInstall"/>
@@ -62,3 +63,13 @@
 						 Parameters="path=$(SitecoreDeployFolder);url=$(SitecoreWebUrl)"/>
 		</Target>
 	</Project>
+
+## Demo Site ##
+
+You can download the demo website that uses these tools from [BuildExtenstionDemo](https://github.com/HedgehogDevelopment/BuildExtensionsDemo).
+
+## License ##
+
+Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)
+
+

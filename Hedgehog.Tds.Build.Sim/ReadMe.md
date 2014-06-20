@@ -69,3 +69,7 @@ The following is an example configuration that can be used with [Team Developmen
 			InstanceDirectory="$(SitecoreDeployFolder)"
 			ConnectionString="Data Source=.;User ID=sitecore;Password=sitecore123"
 		/>
+		
+## License ##
+
+Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)

@@ -45,3 +45,8 @@ A Sitecore instance can be deeleted using the **/delete** switch. The task takes
 The following is an example of calling delete:
 
     Hedgehog.Tds.Build.Sim.Console.exe delete "InstanceName:demo.tds" "InstanceDirectory:c:\sitecore" "ConnectionString:Data Source=.;User ID=sitecore;Password=sitecore123" 
+
+
+## License ##
+
+Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)

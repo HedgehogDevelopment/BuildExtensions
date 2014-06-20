@@ -41,3 +41,6 @@ The following is an example configuration that can be used with [Team Developmen
 
 
 
+## License ##
+
+Distributed using the [Apache 2 Licence](https://github.com/HedgehogDevelopment/BuildExtensions/blob/master/Licence.txt)
