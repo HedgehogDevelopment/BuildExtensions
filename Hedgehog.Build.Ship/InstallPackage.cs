@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using Microsoft.Build.Framework;
@@ -16,6 +17,13 @@ namespace Hedgehog.Build.Ship
         [Required]
         public string FilePath { get; set; }
 
+        public int Timeout { get; set; }
+
+        public int PackageId { get; set;}
+
+        public string Description { get; set; }
+
+
         public override bool Execute()
         {
             var result = false;
@@ -32,7 +40,18 @@ namespace Hedgehog.Build.Ship
 
                     Log.LogMessage("Sitecore Ship Upload: Pushing to {0}", absolutUrl);
 
-                    WebClient client = new WebClient();
+
+                    if (PackageId > 0 && !string.IsNullOrEmpty(Description))
+                    {
+                        //this is hack for now
+                        absolutUrl = absolutUrl +
+                                     string.Format("?packageId={0}&description={1}", PackageId, Description);
+                    }
+
+                    Log.LogWarning("Sitecore Ship Upload Finished to {0}, timeout {1}", absolutUrl, Timeout == 0 ? 100 : Timeout);
+
+                    WebClientEx client = new WebClientEx();
+                    client.Timeout = Timeout == 0 ? 100 : Timeout;
                     client.UploadFile(absolutUrl, "POST", FilePath);
                     result = true;
 

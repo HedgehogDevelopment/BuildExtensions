@@ -52,6 +52,9 @@
     <Compile Include="InstallPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Publish.cs" />
+    <Compile Include="WebClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.md" />
