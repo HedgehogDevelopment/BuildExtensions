@@ -37,7 +37,7 @@ This task will install a Sitecore instance using **Sitecore SIM** and has the fo
 * ConnectionString - The connection string to use for installing the Sitecore databases
 * AppPoolIdentity - The identity to give the AppPool for example "Network Service"
 * LicensePath - The path to the Sitecore license file, e.g. "c:\sitecore\license.xml"
-
+* Modules - A pipe separated list of modules to install. This parameter is optional.
 
 The following is an example configuration that can be used with [Team Development for Sitecore](http://www.hhogdev.com/products/team-development-for-sitecore/overview.aspx).
 
@@ -46,10 +46,11 @@ The following is an example configuration that can be used with [Team Developmen
 			InstanceName="$(SitecoreWebUrl)"
 			InstanceDirectory="$(SitecoreDeployFolder)"
 			RepoDirectory="c:\sitecorerepo"
-			RepoFile="Sitecore 7.1 rev. 130926.zip"
+			RepoFile="Sitecore 7.1 rev. 140130.zip"
 			ConnectionString="Data Source=.;User ID=sitecore;Password=sitecore123"
 			AppPoolIdentity="NetworkService"
 			LicencePath="C:\Sitecore\license.xml"
+			Modules="DMS 7.1 rev. 140130.zip|Web Forms for Marketers 2.4.0 rev. 140117.zip"
 		/>
 
 ### SimDelete ###
