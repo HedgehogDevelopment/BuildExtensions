@@ -1,4 +1,5 @@
-<img src="http://www.hhogdev.com/Images/newsletter/logo_hedgehog.jpg" alt="Hedgehog Development" width="203" height="65" border="0">
+<img src="https://www.hhog.com/-/media/PublicImages/Hedgehog/Hedgehog-logo-4color-275x46.jpg" alt="Hedgehog Development" border="0"> 
+
 
 ================================
 
@@ -64,9 +65,13 @@ The repository contains the following tools:
 		</Target>
 	</Project>
 
-## Demo Site ##
+## Resources ##
 
 You can download the demo website that uses these tools from [BuildExtenstionDemo](https://github.com/HedgehogDevelopment/BuildExtensionsDemo).
+
+Slides from presentation: [https://www.slideshare.net/mikeedwards83/sitecore-nirvana-continous-delivery](https://www.slideshare.net/mikeedwards83/sitecore-nirvana-continous-delivery)
+
+Video about build extensions: [http://www.youtube.com/watch?v=MLMHMkjMZ1w](http://www.youtube.com/watch?v=MLMHMkjMZ1w)
 
 ## License ##
 
